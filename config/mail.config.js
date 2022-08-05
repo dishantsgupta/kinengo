@@ -8,12 +8,12 @@ const sendMailForget = async (email, randInt) => {
             secure: false,
             requireTLS: true,
             auth: {
-                user: 'dabbawala46@gmail.com',
-                pass: 'vrcjhrognjmvtxwa',
+                user: '', // sender email id
+                pass: '', // password
             }
         });
         await transporter.sendMail({
-            from: 'dabbawala46@gmail.com',
+            from: '', // sender email id
             to: email,
             subject: 'Testing',
             text: `Dear user,
